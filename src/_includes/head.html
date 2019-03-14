@@ -18,7 +18,7 @@
   <meta name="description" content="{{desc}}">
   <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@flutterio">
 
   <meta property="og:title" content="{{ page.title }}">
@@ -32,6 +32,10 @@
   {% for css in page.css -%}
     {% asset '{{css}}' %}
   {% endfor %}
+  {% comment %}
+    TODO: use a local copy of clipboard.js rather than CDN
+  {% endcomment -%}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
   {% asset main.js %}
   {% for js in page.js -%}
     <script {% if js.defer %}defer{% endif %} src="{{js.url | default: js}}"></script>
@@ -50,4 +54,5 @@
   </script>
 
   <meta name="google-site-verification" content="HFqxhSbf9YA_0rBglNLzDiWnrHiK_w4cqDh2YD2GEY4" />
+  <meta name="google-site-verification" content="Zom-prnFykfYycmI_nzRWYx5r6Z9OwR-yEsgElRz_Ug" />
 </head>

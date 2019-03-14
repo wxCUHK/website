@@ -1,10 +1,17 @@
 ---
-title: Widget inspector
+title: Flutter inspector
 description: A brief overview of Flutter's widget inspector.
 ---
 
-The Flutter widget inspector is powerful tool for visualizing and exploring
+The Flutter widget inspector is a powerful tool for visualizing and exploring
 Flutter widget trees.
+
+{{site.alert.note}}
+  While you can still access the Flutter inspector from Android Studio, it
+  is now part of the new [Dart DevTools](https://flutter.github.io/devtools).
+  You can find more up-to-date docs on the 
+  [DevTools wiki](https://flutter.github.io/devtools/inspector)
+{{site.alert.end}}
 
 The Flutter framework uses widgets as [the core building
 block](/docs/development/ui/widgets-intro) for anything from controls (text,
@@ -20,7 +27,7 @@ these widget trees. It can be helpful when:
 ## Getting started with the inspector
 
 The inspector is currently available in [the Flutter
-plugin](/get-started/editor) for Android Studio, or IntelliJ IDEA.
+plugin](/docs/get-started/editor) for Android Studio, or IntelliJ IDEA.
 
 To start click "Select widget" on the Flutter inspector toolbar, and then click
 on the device to select a widget. The selected widget is then highlighted
@@ -44,4 +51,4 @@ For a more complete demonstration of the inspector, see the
 ## Feedback
 
 If you have suggestions, or encounter issues, please
-[file an issue in our tracker](https://github.com/flutter/flutter-intellij/issues/new?labels=inspector)!
+[file an issue in our tracker]({{site.github}}/flutter/flutter-intellij/issues/new?labels=inspector)!

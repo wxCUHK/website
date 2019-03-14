@@ -1,5 +1,11 @@
 ---
 title: Handling changes to a text field
+prev:
+  title: Focus on a Text Field
+  path: /docs/cookbook/forms/focus
+next:
+  title: Retrieve the value of a text field
+  path: /docs/cookbook/forms/retrieve-input
 ---
 
 In some cases, it can be handy to run a callback function every time the text
@@ -16,9 +22,9 @@ we have two options:
 ## 1. Supply an `onChanged` callback to a `TextField`
 
 The simplest approach is to supply an
-[`onChanged`](https://docs.flutter.io/flutter/material/TextField/onChanged.html)
+[`onChanged`]({{site.api}}/flutter/material/TextField/onChanged.html)
 callback to a
-[`TextField`](https://docs.flutter.io/flutter/material/TextField-class.html).
+[`TextField`]({{site.api}}/flutter/material/TextField-class.html).
 Whenever the text changes, the callback will be invoked. One downside to this
 approach is it does not work with `TextFormField` Widgets.
 
@@ -37,13 +43,13 @@ TextField(
 ## 2. Use a `TextEditingController`
 
 A more powerful, but more elaborate approach, is to supply a
-[`TextEditingController`](https://docs.flutter.io/flutter/widgets/TextEditingController-class.html)
+[`TextEditingController`]({{site.api}}/flutter/widgets/TextEditingController-class.html)
 as the
-[`controller`](https://docs.flutter.io/flutter/material/TextField/controller.html)
+[`controller`]({{site.api}}/flutter/material/TextField/controller.html)
 property of the `TextField` or a `TextFormField`.
 
 To be notified when the text changes, we can listen to the controller using its
-[`addListener`](https://docs.flutter.io/flutter/foundation/ChangeNotifier/addListener.html)
+[`addListener`]({{site.api}}/flutter/foundation/ChangeNotifier/addListener.html)
 method.
 
 ### Directions
@@ -123,7 +129,7 @@ _printLatestValue() {
 
 Finally, we need to listen to the `TextEditingController` and run the
 `_printLatestValue` method whenever the text changes. We will use the
-[`addListener`](https://docs.flutter.io/flutter/foundation/ChangeNotifier/addListener.html)
+[`addListener`]({{site.api}}/flutter/foundation/ChangeNotifier/addListener.html)
 method to achieve this task.
 
 In this example, we will begin listening for changes when the

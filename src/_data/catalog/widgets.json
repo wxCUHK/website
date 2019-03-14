@@ -418,7 +418,7 @@
   },
   {
     "name": "LinearProgressIndicator",
-    "description": "Progress and activity indicators are visual indications of an app loading content. The LinearProgressIndicator widget implements this component. In addition you may also use the CircularProgressIndicator widget.",
+    "description": "A material design linear progress indicator, also known as a progress bar.",
     "categories": [],
     "subcategories": [
       "Information displays"
@@ -427,14 +427,14 @@
     "image": "<img alt='' src='https://material-design.storage.googleapis.com/publish/material_v_9/0B7WCemMG6e0VWkJiRjRLbzRNS3M/components_progress_and_activity.png'>"
   },
   {
-    "name": "GridView",
-    "description": "A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. The GridView widget implements this component.",
+    "name": "CircularProgressIndicator",
+    "description": "A material design circular progress indicator, which spins to indicate that the application is busy.",
     "categories": [],
     "subcategories": [
       "Information displays"
     ],
-    "link": "https://docs.flutter.io/flutter/widgets/GridView-class.html",
-    "image": "<img alt='' src='https://material-design.storage.googleapis.com/publish/material_v_9/0B7WCemMG6e0VandQYXpNMG9aQUk/components_grid_lists.png'>"
+    "link": "https://docs.flutter.io/flutter/material/CircularProgressIndicator-class.html",
+    "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
   },
   {
     "name": "ListTile",
@@ -846,6 +846,7 @@
     "name": "Transform",
     "description": "A widget that applies a transformation before painting its child.",
     "categories": [
+      "Painting and effects"
     ],
     "subcategories": [
       "Single-child layout widgets"
@@ -877,14 +878,16 @@
   },
   {
     "name": "GridView",
-    "description": "A scrollable, 2D array of widgets.",
+    "description": "A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. The GridView widget implements this component.",
     "categories": [
+      "Scrolling"
     ],
     "subcategories": [
+      "Information displays",
       "Multi-child layout widgets"
     ],
     "link": "https://docs.flutter.io/flutter/widgets/GridView-class.html",
-    "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
+    "image": "<img alt='' src='https://material-design.storage.googleapis.com/publish/material_v_9/0B7WCemMG6e0VandQYXpNMG9aQUk/components_grid_lists.png'>"
   },
   {
     "name": "Flow",
@@ -929,18 +932,6 @@
     ],
     "link": "https://docs.flutter.io/flutter/widgets/ListBody-class.html",
     "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
-  },
-  {
-    "name": "ListView",
-    "sample": "ListView",
-    "description": "A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. It displays its children one after another in the scroll direction. In the cross axis, the children are required to fill the ListView.",
-    "categories": [
-    ],
-    "subcategories": [
-      "Multi-child layout widgets"
-    ],
-    "link": "https://docs.flutter.io/flutter/widgets/ListView-class.html",
-    "image": "<svg viewBox='0 0 100 100'><filter id='inset-shadow-block' x='-50%' y='-50%' width='200%' height='200%'><feComponentTransfer in='SourceAlpha'><feFuncA type='table' tableValues='1 0' /></feComponentTransfer><feGaussianBlur stdDeviation='2' result='Blur'/><feFlood flood-color='#666666' result='color'/><feComposite in2='Blur' operator='in'/><feComposite in2='SourceAlpha' operator='in' /><feMerge><feMergeNode /></feMerge></filter><rect x='0' y='0' width='100' height='100' fill='#3949ab'/><rect x='30' y='10' width='40' height='80' fill='#ffffff'/><rect x='35' y='10' width='30' height='15' fill='#4dd0e1'/><rect x='35' y='30' width='30' height='20' fill='#4dd0e1'/><rect x='35' y='55' width='30' height='5' fill='#4dd0e1'/><rect x='35' y='65' width='30' height='15' fill='#4dd0e1'/><rect x='35' y='85' width='30' height='5' fill='#4dd0e1'/><rect x='30' y='10' width='40' height='80' fill='#ffffff' filter='url(#inset-shadow-block)'/></svg>"
   },
   {
     "name": "CustomMultiChildLayout",
@@ -1198,35 +1189,26 @@
   },
   {
     "name": "ListView",
+    "sample": "ListView",
     "description": "A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. It displays its children one after another in the scroll direction. In the cross axis, the children are required to fill the ListView.",
     "categories": [
       "Scrolling"
     ],
     "subcategories": [
+      "Multi-child layout widgets"
     ],
     "link": "https://docs.flutter.io/flutter/widgets/ListView-class.html",
-    "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
+    "image": "<svg viewBox='0 0 100 100'><filter id='inset-shadow-block' x='-50%' y='-50%' width='200%' height='200%'><feComponentTransfer in='SourceAlpha'><feFuncA type='table' tableValues='1 0' /></feComponentTransfer><feGaussianBlur stdDeviation='2' result='Blur'/><feFlood flood-color='#666666' result='color'/><feComposite in2='Blur' operator='in'/><feComposite in2='SourceAlpha' operator='in' /><feMerge><feMergeNode /></feMerge></filter><rect x='0' y='0' width='100' height='100' fill='#3949ab'/><rect x='30' y='10' width='40' height='80' fill='#ffffff'/><rect x='35' y='10' width='30' height='15' fill='#4dd0e1'/><rect x='35' y='30' width='30' height='20' fill='#4dd0e1'/><rect x='35' y='55' width='30' height='5' fill='#4dd0e1'/><rect x='35' y='65' width='30' height='15' fill='#4dd0e1'/><rect x='35' y='85' width='30' height='5' fill='#4dd0e1'/><rect x='30' y='10' width='40' height='80' fill='#ffffff' filter='url(#inset-shadow-block)'/></svg>"
   },
   {
     "name": "NestedScrollView",
-    "description": "",
+    "description": "A scrolling view inside of which can be nested other scrolling views, with their scroll positions being intrinsically linked.",
     "categories": [
       "Scrolling"
     ],
     "subcategories": [
     ],
     "link": "https://docs.flutter.io/flutter/widgets/NestedScrollView-class.html",
-    "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
-  },
-  {
-    "name": "GridView",
-    "description": "A scrollable, 2D array of widgets. The most commonly used grid layouts are GridView.count, which creates a layout with a fixed number of tiles in the cross axis, and GridView.extent, which creates a layout with tiles that have a maximum cross-axis extent. A custom SliverGridDelegate can produce an aribtrary 2D arrangement of children, including arrangements that are unaligned or overlapping.",
-    "categories": [
-      "Scrolling"
-    ],
-    "subcategories": [
-    ],
-    "link": "https://docs.flutter.io/flutter/widgets/GridView-class.html",
     "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
   },
   {
@@ -1317,17 +1299,6 @@
     ],
     "link": "https://docs.flutter.io/flutter/widgets/Opacity-class.html",
     "image": "<svg viewBox='0 0 100 100'><rect x='0' y='0' width='100' height='100' fill='#3949ab'/><rect x='10' y='10' width='60' height='60' fill='#3b75ad'/><rect x='20' y='30' width='70' height='50' fill='#ffffff' opacity='0.8'/></svg>"
-  },
-  {
-    "name": "Transform",
-    "description": "A widget that applies a transformation before painting its child.",
-    "categories": [
-      "Painting and effects"
-    ],
-    "subcategories": [
-    ],
-    "link": "https://docs.flutter.io/flutter/widgets/Transform-class.html",
-    "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
   },
   {
     "name": "DecoratedBox",
@@ -1670,5 +1641,16 @@
     ],
     "link": "https://docs.flutter.io/flutter/widgets/PageView-class.html",
     "image": "<img alt='' src='/images/catalog-widget-placeholder.png'>"
+  },
+  {
+    "name": "SliverAppBar",
+    "description": "A material design app bar that integrates with a CustomScrollView.",
+    "categories": [
+    ],
+    "subcategories": [
+      "App structure and navigation"
+    ],
+    "link": "https://docs.flutter.io/flutter/material/SliverAppBar-class.html",
+    "image": "<img alt='' src='https://material-design.storage.googleapis.com/publish/material_v_9/0B7WCemMG6e0VclpfSFpuelBGR1k/components_toolbars.png'>"
   }
 ]

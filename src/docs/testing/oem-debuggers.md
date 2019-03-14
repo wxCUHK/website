@@ -1,5 +1,7 @@
 ---
 title: Using OEM debuggers
+short-title: debuggers
+description: How to connect an OEM debugger, such as Xcode, to your running Flutter app.
 ---
 
 {{site.alert.tip}}
@@ -13,7 +15,7 @@ Only the first section of this guide, Debugging Dart code, is relevant for you.
 
 If you're writing a platform-specific plugin or using platform-specific
 libraries written in Swift, ObjectiveC, Java, or Kotlin, you can debug
-that portion of your code using XCode (for iOS) or Android Gradle (for Android).
+that portion of your code using Xcode (for iOS) or Android Gradle (for Android).
 This guide shows you how you can connect _two_ debuggers to your Dart app,
 one for Dart, and one for the OEM code.
 
@@ -26,13 +28,13 @@ plugins installed and configured.
 {{site.alert.tip}}
   Connect to a physical device when debugging, rather than an emulator or
   simulator, which don't support profile mode. For more information, see
-  [Flutter's modes](https://github.com/flutter/flutter/wiki/Flutter's-modes).
+  [Flutter's modes]({{site.github}}/flutter/flutter/wiki/Flutter's-modes).
 {{site.alert.end}}
 
 ### Dart debugger
 
 * Open your project in Android Studio. If you don't have a project yet,
-  create one using the instructions in [Test drive](/get-started/test-drive).
+  create one using the instructions in [Test drive](/docs/get-started/test-drive).
 
 * Simultaneously bring up the Debug pane and run the app in the Console
   view by clicking the bug icon
@@ -154,7 +156,7 @@ Dart debugger and, 2) the Android Gradle debugger.
 * Create a basic Flutter app.
 
 * Replace `lib/main.dart` with the following example code from the
-[`url_launcher`](https://pub.dartlang.org/packages/url_launcher)
+[`url_launcher`]({{site.pub}}/packages/url_launcher)
 package:
 
 {% prettify dart %}
@@ -327,11 +329,11 @@ In other words, DEBUG!
   Toggle between the debuggers by clicking the appropriate debugger in
    the Debug pane's banner.
 
-## Debugging with XCode (iOS)
+## Debugging with Xcode (iOS)
 
 In order to debug OEM iOS code, you need an app that contains OEM iOS code.
 In this section, you'll learn how to connect two debuggers to your app: 1) the
-Dart debugger and, 2) the XCode debugger.
+Dart debugger and, 2) the Xcode debugger.
 
 ## Resources
 
@@ -348,11 +350,11 @@ iOS, and Android:
 ### Android
 
 You can find the following debugging resources on
-[developer.android.com](https://developer.android.com).
+[developer.android.com]({{site.android-dev}}).
 
-* [Debug your app](https://developer.android.com/studio/debug)
+* [Debug your app]({{site.android-dev}}/studio/debug)
 * [Android Debug
-  Bridge (adb)](https://developer.android.com/studio/command-line/adb)
+  Bridge (adb)]({{site.android-dev}}/studio/command-line/adb)
 
 ### iOS
 

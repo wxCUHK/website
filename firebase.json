@@ -21,7 +21,7 @@
       { "source": "/docs/cookbook/testing/integration-test-profiling", "destination": "/docs/cookbook/testing/integration/profiling", "type": 301 },
       { "source": "/docs/cookbook/testing/integration-test-scrolling", "destination": "/docs/cookbook/testing/integration/scrolling", "type": 301 },
       { "source": "/docs/cookbook/testing/mocking", "destination": "/docs/cookbook/testing/unit/mocking", "type": 301 },
-      { "source": "/docs/cookbook/testing/unit-test", "destination": "/docs/cookbook/testing/unit", "type": 301 },
+      { "source": "/docs/cookbook/testing/unit-test", "destination": "/docs/cookbook/testing/unit/introduction", "type": 301 },
       { "source": "/docs/cookbook/testing/widget-test-finders", "destination": "/docs/cookbook/testing/widget/finders", "type": 301 },
       { "source": "/docs/cookbook/testing/widget-test-introduction", "destination": "/docs/cookbook/testing/widget", "type": 301 },
       { "source": "/docs/cookbook/testing/widget-test-tap-drag", "destination": "/docs/cookbook/testing/widget/tap-drag", "type": 301 },
@@ -33,6 +33,7 @@
       { "source": "/docs/development/tools/ide/vs-code", "destination": "/docs/development/tools/vs-code", "type": 301 },
       { "source": "/docs/development/tools/sdk", "destination": "/docs/development/tools/sdk/upgrading", "type": 301 },
       { "source": "/docs/development/ui/widgets/catalog", "destination": "/docs/development/ui/widgets", "type": 301 },
+      { "source": "/docs/development/ui/widgets/widgetindex", "destination": "/docs/reference/widgets", "type": 301 },
       { "source": "/docs/reference/widgets/widgetindex", "destination": "/docs/reference/widgets", "type": 301 },
       { "source": "/docs/reference/widgets/:catalogpage+", "destination": "/docs/development/ui/widgets/:catalogpage+", "type": 301 },
       { "source": "/docs/resources/design-principles", "destination": "https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo", "type": 301 },
@@ -68,6 +69,7 @@
       { "source": "/getting-started", "destination": "/get-started", "type": 301 },
       { "source": "/hot-reload", "destination": "/docs/development/tools/hot-reload", "type": 301 },
       { "source": "/ide-setup", "destination": "/docs/get-started/editor", "type": 301 },
+      { "source": "/images/intellij/hot-reload.gif", "destination": "https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/tools/android-studio/hot-reload.gif", "type": 301 },
       { "source": "/inspector", "destination": "/docs/development/tools/inspector", "type": 301 },
       { "source": "/intellij-ide", "destination": "/docs/development/tools/android-studio", "type": 301 },
       { "source": "/intellij-setup", "destination": "/docs/get-started/editor", "type": 301 },
@@ -100,7 +102,8 @@
       { "source": "/web-analogs", "destination": "/docs/get-started/flutter-for/web-devs", "type": 301 },
       { "source": "/widgets", "destination": "/docs/development/ui/widgets/catalog", "type": 301 },
       { "source": "/widgets/:rest*", "destination": "/docs/development/ui/widgets/:rest*", "type": 301 },
-      { "source": "/widgets-intro", "destination": "/docs/development/ui/widgets-intro", "type": 301 }
+      { "source": "/widgets-intro", "destination": "/docs/development/ui/widgets-intro", "type": 301 },
+      { "source": "/youtube", "destination": "https://youtube.com/flutterdev", "type": 301 }
     ]
   }
 }

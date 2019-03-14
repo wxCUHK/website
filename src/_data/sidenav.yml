@@ -27,7 +27,7 @@
     - title: "Dart language overview"
       permalink: https://www.dartlang.org/guides/language
 
-- title: Samples & codelabs
+- title: Samples & tutorials
   children:
     - title: Sample apps on GitHub
       permalink: https://github.com/flutter/samples/blob/master/INDEX.md
@@ -35,6 +35,8 @@
       permalink: /docs/cookbook
     - title: Codelabs
       permalink: /docs/codelabs
+    - title: Tutorials
+      permalink: /docs/reference/tutorials
 
 - title: Development
   expanded: true
@@ -47,25 +49,29 @@
           permalink: /docs/development/ui/widgets-intro
         - title: Building layouts
           permalink: /docs/development/ui/layout
+          children:
+            - title: Layouts in Flutter
+              permalink: /docs/development/ui/layout
+              match-page-url-exactly: true
+            - title: Tutorial
+              permalink: /docs/development/ui/layout/tutorial
+            - title: Box constraints
+              permalink: /docs/development/ui/layout/box-constraints
         - title: Adding interactivity
           permalink: /docs/development/ui/interactive
         - title: Assets and images
           permalink: /docs/development/ui/assets-and-images
         - title: Navigation & routing
           permalink: /docs/development/ui/navigation
-        # Commenting out the following entry per
-        # https://github.com/flutter/website/issues/1496#issuecomment-431455211
-        # - title: Inspect an app's UI
-        #   permalink: /docs/development/ui/inspector
         - title: Animations
           permalink: /docs/development/ui/animations
           children:
             - title: Introduction
               permalink: /docs/development/ui/animations
               match-page-url-exactly: true
-            - title: Animations overview
+            - title: Overview
               permalink: /docs/development/ui/animations/overview
-            - title: Animations tutorial
+            - title: Tutorial
               permalink: /docs/development/ui/animations/tutorial
             - title: Hero animations
               permalink: /docs/development/ui/animations/hero-animations
@@ -87,6 +93,17 @@
       children:
         - title: State management
           permalink: /docs/development/data-and-backend/state-mgmt
+          children:
+            - title: Introduction
+              permalink: /docs/development/data-and-backend/state-mgmt/intro
+            - title: Think declaratively
+              permalink: /docs/development/data-and-backend/state-mgmt/declarative
+            - title: Ephemeral vs app state
+              permalink: /docs/development/data-and-backend/state-mgmt/ephemeral-vs-app
+            - title: Simple app state management
+              permalink: /docs/development/data-and-backend/state-mgmt/simple
+            - title: Options
+              permalink: /docs/development/data-and-backend/state-mgmt/options
         - title: JSON and serialization
           permalink: /docs/development/data-and-backend/json
         - title: Back-end services
@@ -115,7 +132,7 @@
         - title: Background processes
           permalink: /docs/development/packages-and-plugins/background-processes
         - title: Package site
-          permalink: http://pub.dartlang.org/flutter
+          permalink: https://pub.dartlang.org/flutter
     - title: Tools & techniques
       permalink: /docs/development/tools
       children:
@@ -123,6 +140,8 @@
           permalink: /docs/development/tools/android-studio
         - title: Visual Studio Code
           permalink: /docs/development/tools/vs-code
+        - title: Dart DevTools
+          permalink: https://flutter.github.io/devtools/
         - title: Flutter SDK
           permalink: /docs/development/tools/sdk
           children:
@@ -134,8 +153,8 @@
           permalink: /docs/development/tools/hot-reload
         - title: Code formatting
           permalink: /docs/development/tools/formatting
-        - title: Widget inspector
-          permalink: /docs/development/tools/inspector
+        - title: Flutter inspector
+          permalink: https://flutter.github.io/devtools/inspector
 
 - title: Testing & optimization
   permalink: /docs/testing
@@ -149,10 +168,11 @@
     - title: Testing
       permalink: /docs/testing
       match-page-url-exactly: true
+    - title: Performance best practices
+      permalink: /docs/testing/best-practices
     - title: Performance profiling
       permalink: /docs/testing/ui-performance
-    # TODO(chalin): The following entry is not in the IA, so I'm commenting it out for now. Should it be here?
-    # We don't have this page yet, so that's fine.
+    # We don't have this page yet.
     # - title: Making your compiled app smaller
 
 - title: Deployment
@@ -175,7 +195,7 @@
     - title: Technical overview
       permalink: /docs/resources/technical-overview
     # - title: Flutter best practices # TODO
-    - title: Technical videos for learning Flutter
+    - title: Technical videos
       permalink: /docs/resources/videos
     # - title: Flutter developer communities # TODO
     # - title: Flutter learning resources # TODO
@@ -185,8 +205,6 @@
 - title: Reference
   expanded: true
   children:
-    - title: Tutorials
-      permalink: /docs/reference/tutorials
     - title: Widget index
       permalink: /docs/reference/widgets
     - title: API reference
